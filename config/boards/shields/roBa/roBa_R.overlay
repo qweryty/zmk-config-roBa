@@ -1,13 +1,10 @@
 #include "roBa.dtsi"
 #include "kscan.dtsi"
+#include "split_input_common.dtsi"
 
 &default_transform {
     col-offset = <6>;
 };
-
-/*&roba_physical_layout {
-    kscan = <&kscan0>;
-};*/
 
 &kscan0 {
         col-gpios
@@ -19,12 +16,8 @@
             ;
 };
 
-/ {
-    trackball_listener {
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
-
-    };
+&trackball_split {
+    device = <&trackball>;
 };
 
 &pinctrl {

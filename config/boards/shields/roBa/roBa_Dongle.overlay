@@ -1,4 +1,5 @@
 #include "roBa.dtsi"
+#include "split_input_common.dtsi"
 
 / {
     kscan0: kscan {
@@ -9,6 +10,6 @@
     };
 };
 
-/*&roba_physical_layout {
-    kscan = <&mock_kscan>;
-};*/
+&trackball_listener {
+    status = "okay";
+};
