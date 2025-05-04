@@ -6,5 +6,5 @@ include:
    shield: roBa_R
  - board: seeeduino_xiao_ble
    shield: roBa_L
- - board: seeeduino_xiao_ble
-   shield: settings_reset
+#  - board: seeeduino_xiao_ble
+#    shield: settings_reset
