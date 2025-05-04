@@ -1,7 +1,7 @@
 #include "roBa.dtsi"
 
 / {
-    # mock_kscan: mock_kscan_0 {
+    // mock_kscan: mock_kscan_0 {
     kscan0: kscan {
         compatible = "zmk,kscan-mock";
         columns = <0>;
@@ -10,10 +10,10 @@
     };
 };
 
-#&kscan0 {
-#        col-gpios = ;
-#};
+/*&kscan0 {
+        col-gpios = ;
+};
 
-#&roba_physical_layout {
-#    kscan = <&mock_kscan>;
-#};
+&roba_physical_layout {
+    kscan = <&mock_kscan>;
+};*/
