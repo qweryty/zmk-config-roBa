@@ -4,6 +4,10 @@
     col-offset = <6>;
 };
 
+&roba_physical_layout {
+    kscan = <&kscan0>;
+};
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
