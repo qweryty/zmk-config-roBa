@@ -13,5 +13,7 @@
         compatible = "zmk,input-listener";
         status = "disabled";
         device = <&trackball_split>;
+
+        // TODO scroll, mouse layers
     };
 };
