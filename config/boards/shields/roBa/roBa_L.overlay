@@ -1,8 +1,8 @@
 #include "roBa.dtsi"
 
-/*&roba_physical_layout {
+&roba_physical_layout {
     kscan = <&kscan0>;
-};*/
+};
 
 &kscan0 {
         col-gpios
