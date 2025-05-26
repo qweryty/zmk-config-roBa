@@ -31,7 +31,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <5 6 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42>;
+            hold-trigger-key-positions = <5 6 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 7>;
             hold-trigger-on-release;
         };
     };
@@ -41,10 +41,10 @@
 
         default {
             bindings = <
-&kp Q         &kp W              &kp F            &kp P            &kp B                       &kp J      &kp L             &kp U             &kp Y               &kp SEMICOLON
-&hml A LCTRL  &hml R LEFT_SHIFT  &hml S LEFT_ALT  &hml T LEFT_WIN  &kp G   &trans      &trans  &kp M      &hmr N RIGHT_WIN  &hmr E RIGHT_ALT  &hmr I RIGHT_SHIFT  &hmr O RCTRL
-&kp Z         &kp X              &kp C            &kp D            &kp V   &trans      &trans  &kp K      &kp H             &kp COMMA         &kp DOT             &kp SLASH
-&kp ESCAPE    &trans             &trans           &trans           &trans  &trans      &trans  &kp SPACE                                                          &trans
+&kp Q         &kp W              &kp F            &kp P            &kp B                                  &kp J      &kp L             &kp U             &kp Y               &kp SEMICOLON
+&hml LCTRL A  &hml LEFT_SHIFT R  &hml LEFT_ALT S  &hml LEFT_WIN T  &kp G   &trans          &trans         &kp M      &hmr RIGHT_WIN N  &hmr RIGHT_ALT E  &hmr RIGHT_SHIFT I  &hmr RCTRL O
+&kp Z         &kp X              &kp C            &kp D            &kp V   &kp DELETE      &kp BACKSPACE  &kp K      &kp H             &kp COMMA         &kp DOT             &kp SLASH
+&kp ESCAPE    &trans             &trans           &trans           &trans  &trans          &trans         &kp SPACE                                                          &trans
             >;
         };
     };
