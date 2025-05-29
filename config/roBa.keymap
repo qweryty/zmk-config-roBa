@@ -42,6 +42,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
+
+        encoder: encoder {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            label = "ENCODER";
+            #sensor-binding-cells = <2>;
+            bindings = <&msc>, <&msc>;
+        };
     };
 
     keymap {
@@ -66,7 +73,7 @@
 &to 0   &trans  &trans  &trans  &trans  &trans         &trans  &trans                            &trans
             >;
 
-            sensor-bindings = <&encoder_mouse>;
+            sensor-bindings = <&encoder SCRL_UP SCRL_DOWN>;
         };
 
         Navigation {
