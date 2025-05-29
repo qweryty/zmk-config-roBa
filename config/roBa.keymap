@@ -56,6 +56,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C>, <&kp D>;
         };
+
+        new_behavior2: new_behavior2 {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "NEW_BEHAVIOR2";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc MOVE_Y(5)>, <&msc MOVE_Y(-5)>;
+        };
     };
 
     keymap {
@@ -80,7 +87,7 @@
 &to 0   &trans  &trans  &to 0   &trans  &to 2          &trans  &trans                            &trans
             >;
 
-            sensor-bindings = <&new_behavior>;
+            sensor-bindings = <&new_behavior2>;
         };
 
         Navigation {
