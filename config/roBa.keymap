@@ -78,10 +78,10 @@
 
         Navigation {
             bindings = <
-&trans          &kp HOME  &kp UP    &kp END    &kp PG_UP                                 &trans          &trans     &trans     &trans  &trans
-&kp LEFT_SHIFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &mkp MCLK      &trans          &trans          &mkp LCLK  &mkp RCLK  &trans  &trans
-&kp LCTRL       &trans    &trans    &trans     &trans     &trans         &trans          &trans          &trans     &trans     &trans  &trans
-&to 0           &trans    &trans    &to 1      &trans     &to 0          &msc SCRL_DOWN  &msc SCRL_DOWN                                &trans
+&trans          &kp HOME      &kp UP          &kp END    &kp PG_UP                                 &trans           &trans     &trans     &trans  &trans
+&kp LEFT_SHIFT  &kp LEFT      &kp DOWN        &kp RIGHT  &kp PG_DN  &mkp MCLK      &trans          &trans           &mkp LCLK  &mkp RCLK  &trans  &trans
+&kp LCTRL       &trans        &trans          &trans     &trans     &trans         &trans          &trans           &trans     &trans     &trans  &trans
+&to 0           &msc SCRL_UP  &msc SCRL_DOWN  &to 1      &trans     &to 0          &msc SCRL_LEFT  &msc SCRL_RIGHT                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp A B>;
