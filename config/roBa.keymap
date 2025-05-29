@@ -70,7 +70,7 @@
 &trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans   &trans   &trans
 &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &mkp MCLK      &trans  &kp N6  &kp N7  &kp N8   &kp N9   &kp N0
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6         &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&to 0   &trans  &trans  &trans  &trans  &trans         &trans  &trans                            &trans
+&to 0   &trans  &trans  &to 0   &trans  &to 2          &trans  &trans                            &trans
             >;
 
             sensor-bindings = <&encoder SCRL_UP SCRL_DOWN>;
@@ -81,10 +81,10 @@
 &trans          &kp HOME  &kp UP    &kp END    &kp PG_UP                         &trans  &trans     &trans     &trans  &trans
 &kp LEFT_SHIFT  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &mkp MCLK      &trans  &trans  &mkp LCLK  &mkp RCLK  &trans  &trans
 &kp LCTRL       &trans    &trans    &trans     &trans     &trans         &trans  &trans  &trans     &trans     &trans  &trans
-&to 0           &trans    &trans    &trans     &trans     &trans         &trans  &trans                                &trans
+&to 0           &trans    &trans    &to 1      &trans     &to 0          &trans  &trans                                &trans
             >;
 
-            sensor-bindings = <&encoder_mouse>;
+            sensor-bindings = <&inc_dec_kp A B>;
         };
 
         Rus {
