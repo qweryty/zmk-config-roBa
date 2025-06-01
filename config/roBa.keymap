@@ -51,7 +51,8 @@
             label = "ENCODER_MOUSE_VAR";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            tap-ms = <20>;
+            //tap-ms = <20>;
+            tap-ms = <10>;
         };
     };
 
