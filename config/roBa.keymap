@@ -42,8 +42,7 @@
             label = "ENCODER_MOUSE";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
-            tap-ms = <10>;
+            tap-ms = <20>;
         };
 
         encoder: encoder {
@@ -90,7 +89,7 @@
 &to 0   &trans  &trans  &to 0   &trans  &to 2          &trans  &trans                            &trans
             >;
 
-            sensor-bindings = <&new_behavior2>;
+            sensor-bindings = <&encoder_mouse>;
         };
 
         Navigation {
@@ -101,7 +100,7 @@
 &to 0           &msc SCRL_UP  &msc SCRL_DOWN  &to 1      &trans     &to 0          &msc SCRL_LEFT  &msc SCRL_RIGHT                                &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&encoder_mouse>;
         };
 
         Rus {
@@ -111,6 +110,8 @@
 &kp Z    &kp X   &kp C   &kp V   &kp B   &trans      &trans   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH
 &kp ESC  &trans  &trans  &trans  &trans  &trans      &kp RET  &kp SPACE                             &trans
             >;
+
+            sensor-bindings = <&encoder_mouse>;
         };
     };
 };
