@@ -51,8 +51,8 @@
             label = "ENCODER_MOUSE_VAR";
             #sensor-binding-cells = <2>;
             bindings = <&msc>, <&msc>;
-            //tap-ms = <20>;
-            tap-ms = <10>;
+
+            tap-ms = <20>;
         };
     };
 
@@ -72,10 +72,10 @@
 
         Numbers {
             bindings = <
-&kp GRAVE      &trans                 &trans            &trans            &trans                         &trans  &trans             &trans             &kp MINUS            &kp EQUAL
-&hml LCTRL N1  &hml LEFT_SHIFT KP_N2  &hml LEFT_ALT N3  &hml LEFT_WIN N4  &kp N5  &mkp MCLK      &trans  &kp N6  &hmr RIGHT_GUI N7  &hmr RIGHT_ALT N8  &hmr RIGHT_SHIFT N9  &hmr RCTRL N0
-&kp F1         &kp F2                 &kp F3            &kp F4            &kp F5  &kp F6         &kp F7  &kp F8  &kp F9             &kp F10            &kp F11              &kp F12
-&to 0          &trans                 &trans            &to 0             &trans  &to 2          &trans  &trans                                                             &trans
+&kp F1         &kp F2              &kp F3            &kp F4            &kp F5                                &kp F8     &kp F9             &kp F10            &kp F11              &kp F12
+&hml LCTRL N1  &hml LEFT_SHIFT N2  &hml LEFT_ALT N3  &hml LEFT_WIN N4  &kp N5  &mkp MCLK      &kp F7         &kp N6     &hmr RIGHT_GUI N7  &hmr RIGHT_ALT N8  &hmr RIGHT_SHIFT N9  &hmr RCTRL N0
+&kp GRAVE      &trans              &trans            &trans            &trans  &kp F6         &kp BACKSPACE  &kp MINUS  &kp EQUAL          &kp COMMA          &kp DOT              &kp SLASH
+&to 0          &trans              &trans            &to 0             &trans  &to 2          &trans         &trans                                                                &kp BACKSLASH
             >;
 
             sensor-bindings = <&encoder_mouse_var SCRL_DOWN SCRL_UP>;
@@ -83,10 +83,10 @@
 
         Navigation {
             bindings = <
-&trans          &kp HOME      &kp UP          &kp END    &kp PG_UP                                 &trans           &trans     &trans         &trans         &trans
-&kp LEFT_SHIFT  &kp LEFT      &kp DOWN        &kp RIGHT  &kp PG_DN  &mkp MCLK      &trans          &trans           &mkp LCLK  &mkp RCLK      &trans         &kp RIGHT_SHIFT
-&kp LCTRL       &kp LEFT_GUI  &kp LEFT_ALT    &trans     &trans     &trans         &trans          &trans           &trans     &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RCTRL
-&to 0           &msc SCRL_UP  &msc SCRL_DOWN  &to 1      &trans     &to 0          &msc SCRL_LEFT  &msc SCRL_RIGHT                                           &trans
+&trans      &kp HOME  &kp UP        &kp END    &kp PG_UP                         &trans  &trans     &trans         &trans           &trans
+&kp LCTRL   &kp LEFT  &kp DOWN      &kp RIGHT  &kp PG_DN  &mkp MCLK      &trans  &trans  &mkp LCLK  &mkp RCLK      &kp RIGHT_SHIFT  &kp RCTRL
+&kp LSHIFT  &trans    &kp LEFT_ALT  &kp LGUI   &trans     &trans         &trans  &trans  &kp RGUI   &kp RIGHT_ALT  &trans           &trans
+&to 0       &trans    &trans        &to 1      &trans     &to 0          &trans  &trans                                             &trans
             >;
 
             sensor-bindings = <&encoder_mouse_var SCRL_DOWN SCRL_UP>;
@@ -94,10 +94,10 @@
 
         Rus {
             bindings = <
-&kp Q    &kp W   &kp E   &kp R   &kp T                        &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A    &kp S   &kp D   &kp F   &kp G   &trans      &trans   &kp H      &kp J  &kp K      &kp L    &kp SEMI
-&kp Z    &kp X   &kp C   &kp V   &kp B   &trans      &trans   &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&kp ESC  &trans  &trans  &trans  &trans  &trans      &kp RET  &kp SPACE                             &trans
+&kp Q    &kp W   &kp E   &kp R   &kp T                       &kp Y   &kp U  &kp I      &kp O    &kp P
+&kp A    &kp S   &kp D   &kp F   &kp G   &trans      &trans  &kp H   &kp J  &kp K      &kp L    &kp SEMI
+&kp Z    &kp X   &kp C   &kp V   &kp B   &trans      &trans  &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&kp ESC  &trans  &trans  &trans  &trans  &trans      &trans  &trans                             &trans
             >;
 
             sensor-bindings = <&encoder_mouse_var SCRL_DOWN SCRL_UP>;
