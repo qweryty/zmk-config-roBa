@@ -61,10 +61,10 @@
 
         Mod-DH {
             bindings = <
-&kp Q         &kp W              &kp F              &kp P            &kp B                                       &kp J      &kp L             &kp U             &kp Y               &kp SEMICOLON
-&hml LCTRL A  &hml LEFT_SHIFT R  &hml LEFT_ALT S    &hml LEFT_WIN T  &kp G    &mkp MCLK       &kp DOUBLE_QUOTES  &kp M      &hmr RIGHT_WIN N  &hmr RIGHT_ALT E  &hmr RIGHT_SHIFT I  &hmr RCTRL O
-&kp Z         &kp X              &kp C              &kp D            &kp V    &kp DELETE      &kp BACKSPACE      &kp K      &kp H             &kp COMMA         &kp DOT             &kp SLASH
-&kp ESCAPE    &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &to 1            &kp TAB  &to 2           &kp ENTER          &kp SPACE                                                          &kp BACKSLASH
+&kp Q         &kp W              &kp F              &kp P            &kp B                                      &kp J      &kp L             &kp U             &kp Y               &kp SEMICOLON
+&hml LCTRL A  &hml LEFT_SHIFT R  &hml LEFT_ALT S    &hml LEFT_WIN T  &kp G    &mkp MCLK       &kp SINGLE_QUOTE  &kp M      &hmr RIGHT_WIN N  &hmr RIGHT_ALT E  &hmr RIGHT_SHIFT I  &hmr RCTRL O
+&kp Z         &kp X              &kp C              &kp D            &kp V    &kp DELETE      &kp BACKSPACE     &kp K      &kp H             &kp COMMA         &kp DOT             &kp SLASH
+&kp ESCAPE    &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &to 1            &kp TAB  &to 2           &kp ENTER         &kp SPACE                                                          &kp BACKSLASH
             >;
 
             sensor-bindings = <&encoder_mouse_var SCRL_DOWN SCRL_UP>;
