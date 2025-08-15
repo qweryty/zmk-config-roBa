@@ -2,6 +2,7 @@
 #include "kscan.dtsi"
 #include "roBa_3610.dtsi"
 #include "split_input_common.dtsi"
+#include "roba_only.dtsi"
 
 
 &pinctrl {
