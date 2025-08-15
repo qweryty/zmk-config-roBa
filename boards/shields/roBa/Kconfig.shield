@@ -6,3 +6,6 @@ config SHIELD_ROBA_R
 
 config SHIELD_ROBA_L
     def_bool $(shields_list_contains,roBa_L)
+
+config SHIELD_PLOOPY_TRACKBALL_R
+    def_bool $(shields_list_contains,ploopy_trackball_R)

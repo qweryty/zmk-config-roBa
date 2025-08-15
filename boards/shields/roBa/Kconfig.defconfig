@@ -10,7 +10,7 @@ config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
-    default 2
+    default 3
 
 endif
 
@@ -28,6 +28,16 @@ if SHIELD_ROBA_L
 
 config ZMK_KEYBOARD_NAME
     default "roBa_L"
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_PLOOPY_TRACKBALL_R
+
+config ZMK_KEYBOARD_NAME
+    default "ploopy_R"
 
 config ZMK_SPLIT
     default y
