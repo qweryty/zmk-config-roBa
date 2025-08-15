@@ -8,7 +8,7 @@
         a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <12>;
-        status = "disabled";
+        status = "okay";
     };
 
     sensors: sensors {
@@ -17,6 +17,7 @@
         triggers-per-rotation = <10>;
     };
 };
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
@@ -26,8 +27,4 @@
             , <&gpio0 10 GPIO_ACTIVE_HIGH>
             , <&gpio0 9 GPIO_ACTIVE_HIGH>
             ;
-};
-
-&left_encoder {
-    status = "okay";
 };
