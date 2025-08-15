@@ -1,4 +1,5 @@
 #include "roBa_3610.dtsi"
+#include "split_input_common.dtsi"
 
 / {
     chosen {
@@ -60,4 +61,8 @@
 
         cpi = <800>;
     };
+};
+
+&trackball_split {
+    device = <&trackball>;
 };
