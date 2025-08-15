@@ -17,7 +17,7 @@
             <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
-}
+};
 
 &pinctrl {
     spi0_default: spi0_default {
