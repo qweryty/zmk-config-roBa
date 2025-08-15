@@ -1,3 +1,4 @@
+#include "roBa.dtsi"
 #include "roBa_3610.dtsi"
 #include "split_input_common.dtsi"
 
@@ -61,6 +62,10 @@
 
         cpi = <800>;
     };
+};
+
+&default_transform {
+    row-offset = <4>;
 };
 
 &trackball_split {
