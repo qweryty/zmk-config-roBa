@@ -9,7 +9,7 @@
         };
         trackball_ploopy_r_split: trackball_ploopy_r_split@0 {
             compatible = "zmk,input-split";
-            reg = <0>;
+            reg = <1>;
         };
     };
 
