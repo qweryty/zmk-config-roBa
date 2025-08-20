@@ -64,6 +64,8 @@
             ;
 };
 
+/delete-node/ &trackball_ploopy_r_split;
+/delete-node/ &trackball_ploopy_r_listener;
 &trackball_roba_split {
     device = <&trackball>;
 };
