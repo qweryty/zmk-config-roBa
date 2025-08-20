@@ -3,16 +3,27 @@
         #address-cells = <1>;
         #size-cells = <0>;
 
-        trackball_split: trackball_split@0 {
+        trackball_roba_split: trackball_roba_split@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+        trackball_ploopy_r_split: trackball_ploopy_r_split@0 {
             compatible = "zmk,input-split";
             reg = <0>;
         };
     };
 
-    trackball_listener: trackball_listener {
+    trackball_roba_listener: trackball_roba_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
-        device = <&trackball_split>;
+        device = <&trackball_roba_split>;
+
+        // TODO scroll, mouse layers
+    };
+    trackball_ploopy_r_listener: trackball_ploopy_r_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+        device = <&trackball_ploopy_r_split>;
 
         // TODO scroll, mouse layers
     };

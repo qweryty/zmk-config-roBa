@@ -63,6 +63,6 @@
     row-offset = <4>;
 };
 
-&trackball_split {
+&trackball_ploopy_r_split {
     device = <&trackball>;
 };

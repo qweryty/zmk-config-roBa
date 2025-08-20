@@ -64,6 +64,6 @@
             ;
 };
 
-&trackball_split {
+&trackball_roba_split {
     device = <&trackball>;
 };

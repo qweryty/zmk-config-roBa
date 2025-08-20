@@ -10,6 +10,10 @@
     };
 };
 
-&trackball_listener {
+&trackball_roba_listener {
+    status = "okay";
+};
+
+&trackball_ploopy_r_listener {
     status = "okay";
 };
