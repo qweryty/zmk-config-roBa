@@ -7,7 +7,7 @@
             compatible = "zmk,input-split";
             reg = <0>;
         };
-        trackball_ploopy_r_split: trackball_ploopy_r_split@0 {
+        trackball_ploopy_r_split: trackball_ploopy_r_split@1 {
             compatible = "zmk,input-split";
             reg = <1>;
         };
